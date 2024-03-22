@@ -3,18 +3,18 @@ package br.com.marcos.consumer.dtos;
 
 import java.io.Serializable;
 
-public class ProductDTO implements Serializable {
+public class ConsumerDTO implements Serializable {
     private Integer id;
     private String name;
     private Double price;
 
-    public ProductDTO(Integer id, String name, Double price) {
+    public ConsumerDTO(Integer id, String name, Double price) {
         this.id = id;
         this.name = name;
         this.price = price;
     }
 
-    public ProductDTO() { }
+    public ConsumerDTO() { }
 
     public Integer getId() {
         return id;
@@ -42,7 +42,7 @@ public class ProductDTO implements Serializable {
 
     @Override
     public String toString() {
-        return "ProductDTO{" +
+        return "ConsumerDTO{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +
